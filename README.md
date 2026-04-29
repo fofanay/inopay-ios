@@ -1,30 +1,37 @@
 # InopaySDK (iOS / macOS)
 
+[![Swift Package](https://img.shields.io/badge/SwiftPM-compatible-brightgreen.svg)](https://swift.org/package-manager/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Swift Package — client for the Inopay African capital markets infrastructure (BRVM, BVMAC, GSE) via the public sandbox.
 
 ## Status
 
-`v0.1.0-alpha.1` — alpha public, wraps `https://api.getinopay.com/v1/sandbox/*`.
+`v0.1.0-alpha.1` — public alpha. Wraps `https://api.getinopay.com/v1/sandbox/*`.
 
 ## Install
 
-### Swift Package Manager (recommended)
+### Swift Package Manager (Xcode)
 
-In Xcode → File → Add Package Dependencies → enter the URL of the package archive:
+In Xcode → **File → Add Package Dependencies** → enter:
 
 ```
-https://getinopay.com/sdk/ios/inopay-ios-0.1.0-alpha.1.zip
+https://github.com/fofanay/inopay-ios
 ```
 
-Or in `Package.swift`:
+Choose version `0.1.0-alpha.1` (or **Up to Next Major**).
+
+### Package.swift
 
 ```swift
-.package(url: "https://getinopay.com/sdk/ios/inopay-ios-0.1.0-alpha.1.zip", from: "0.1.0")
+.package(url: "https://github.com/fofanay/inopay-ios", from: "0.1.0")
 ```
 
-### Manual
+Then in your target:
 
-Download the zip from <https://getinopay.com/sdk/ios/> and drag `Sources/InopaySDK` into your Xcode project.
+```swift
+.target(name: "MyApp", dependencies: ["InopaySDK"])
+```
 
 ## Quick start
 
