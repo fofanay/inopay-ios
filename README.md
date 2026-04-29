@@ -7,7 +7,7 @@ Swift Package — client for the Inopay African capital markets infrastructure (
 
 ## Status
 
-`v0.1.0-alpha.1` — public alpha. Wraps `https://api.getinopay.com/v1/sandbox/*`.
+`v0.1.0-alpha.2` — public alpha. Wraps `https://api.getinopay.com/v1/sandbox/*`.
 
 ## Install
 
@@ -19,7 +19,7 @@ In Xcode → **File → Add Package Dependencies** → enter:
 https://github.com/fofanay/inopay-ios
 ```
 
-Choose version `0.1.0-alpha.1` (or **Up to Next Major**).
+Choose version `0.1.0-alpha.2` (or **Up to Next Major**).
 
 ### Package.swift
 
